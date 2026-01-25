@@ -21,6 +21,8 @@ if (process.env.NODE_ENV !== "production") {
             origin: "http://localhost:5173",
         })
     );
+} else {
+    app.use(cors()); // Allow all origins in production
 }
 app.use(express.json());   // this middelware will parse json data: req.body
 app.use(rateLimiter);
