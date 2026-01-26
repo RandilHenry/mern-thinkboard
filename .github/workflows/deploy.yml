@@ -18,11 +18,11 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./Frontend
+      working-directory: ./frontend
 
     - name: Build
       run: npm run build
-      working-directory: ./Frontend
+      working-directory: ./frontend
       env:
         VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
