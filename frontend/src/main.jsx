@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/mern-thinkboard/">
+    <BrowserRouter basename="/mern-thinkboard">
       <App />
       <Toaster />
     </BrowserRouter>
